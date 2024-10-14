@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #f7eed7;
+            margin: 0;
+            font-family: sofia-pro, sans-serif;
+        }
+
+        /* Flexbox container for two columns */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        /* Styling for the first column */
+        .column {
+            width: 60%;  /* Adjust width of the columns */
+        }
+
+        h1 {
+            color: #fc451c;
+        }
+
+        h3 {
+            color: #1D4E89;
+            font-weight: bold;
+        }
+
+        a {
+            color: #404040; /* Dark blue or any color you like */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-color: #d79922;
+        }
+
+        #intro {
+            color: #404040;
+            margin-top: 20%;
+            margin-right: 5%;
+            width: 40%;
+        }
+
+        #portfolio {
+            color: #404040;
+            font-family: sofia-pro, sans-serif;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        /* Tools and publication info */
+        .details {
+            color: #555;
+            font-size: 17px; /* Smaller font size for details */
+            display: block; /* Makes sure it sits on a new line */
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+    <div class="column" id="intro">
+        <h1>Molly Taylor</h1>
+        <p>I am a computer science student at Princeton University excited about the intersection of technology and journalism.</p>
+        <p>On campus, I am the Head Features Editor for The Daily Princetonian, a Writing Center Fellow, and a research assistant at the Center for Digital Humanities. I'm also pursuing a minor in history.</p>
+        <p>I most recently served as a tech intern at OpenSecrets. I currently web scrape election results for the Associated Press and volunteer for the Data Liberation Project.</p>
+    </div>
+
+    <div class="column" id="portfolio">
+        <h1>Selected Work</h1>
+
+        <h3>Data Journalism:</h3>
+        <p>
+            <a href="https://storymaps.arcgis.com/stories/10e15271eb21446e9581f14f0883edb3" target="_blank">What can we learn from 200,000 Historical Markers?</a>
+            <span class="details">To be published by Midstory. (Python, Datawrapper, ArcGIS Online) </span>
+        </p>
+        <p>
+            <a href="https://www.opensecrets.org/news/2024/08/oil-and-gas-lobbying-reaches-72-million-in-first-half-of-2024/" target="_blank">Oil and gas lobbying reaches $72 million in first half of 2024.</a>
+            <span class="details">OpenSecrets, August 15, 2024. (Datawrapper)</span>
+        </p>
+        <p>
+            <a href="https://www.dailyprincetonian.com/article/2022/04/princeton-student-athletes-stem-majors-social-sciences" target="_blank">Why do athletes choose social sciences over STEM? We looked at the numbers.</a>
+            <span class="details">The Daily Princetonian, April 11, 2022. (Python, Flourish)</span>
+        </p>
+
+        <h3>Web Development:</h3>
+        <p>
+            <a href="https://neighbour-net.onrender.com/" target="_blank">NeighbourNet</a>
+            <span class="details">Spring 2024. (HTML, CSS, JavaScript, SQLAlchemy, PostgreSQL, Leaflet)</span>
+        </p>
+        <p>
+            <a href="https://projects.dailyprincetonian.com/going-back-to-nassau-ball/" target="_blank">Going Back to Nassau Ball</a>
+            <span class="details">The Daily Princetonian, March 8, 2024. (HTML, CSS, JavaScript)</span>
+        </p>
+        <p>
+            <a href="https://projects.dailyprincetonian.com/big-block-of-cheese-day/" target="_blank">Big Block of Cheese Day</a>
+            <span class="details">The Daily Princetonian, December 8, 2023. (HTML, CSS, JavaScript)</span>
+        </p>
+        <p>
+            <a href="https://projects.dailyprincetonian.com/who-runs-princeton/" target="_blank">Who Runs Princeton?</a>
+            <span class="details">The Daily Princetonian, September 30, 2023. (Figma)</span>
+        </p>
+
+        <h3>Writing:</h3>
+        <p>
+            <a href="https://docs.google.com/document/d/1wvN5RBuxgAZCAZVwS3h_cq0Oh6jmii0k4KKGAxQZp-c/edit?usp=sharing" target="_blank">First on Film: Student-curated exhibit reflects on "the long journey" of racial integration, inclusion at Princeton</a>
+            <span class="details">The Daily Princetonian, March 22, 2022.</span>
+        </p>
+        <p>
+            <a href="https://docs.google.com/document/d/1q5iipLGRL_B5J-GCjXBPwcpyQQom5PPwQJv5Y2I72lY/edit?usp=sharing" target="_blank">Princeton's Cyclab: Where "Nothing is too broken to not try to fix"</a>
+            <span class="details">The Daily Princetonian, December 13, 2022.</span>
+        </p>
+        <p>
+            <a href="https://www.midstory.org/remembering-elektro-mansfield-and-the-world-of-tomorrow/" target="_blank">Remembering Elektro, Mansfield, and the "World of Tomorrow"</a>
+            <span class="details">Midstory, February 8, 2022.</span>
+        </p>
+    </div>
+</div>
+</body>
+</html>
