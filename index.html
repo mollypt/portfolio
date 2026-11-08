@@ -1,163 +1,125 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-            background-color: #f5f1e9;
-            margin: 0;
-            font-family: sofia-pro, sans-serif;
-        }
-
-        .row {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px;
-        }
-
-        .column {
-            width: 60%;  
-        }
-
-        h1 {
-            color: #f05a29;
-        }
-
-        h3 {
-            color: #1D4E89;
-            font-weight: bold;
-        }
-
-        a {
-            color: #404040; 
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            text-decoration-color: #d79922;
-        }
-
-        #intro {
-            color: #404040;
-            margin-top: 18%;
-            margin-right: 5%;
-            width: 40%;
-        }
-
-        #portfolio {
-            color: #404040;
-            font-family: sofia-pro, sans-serif;
-        }
-
-        p {
-            font-size: 20px;
-            margin-bottom: 15px;
-        }
-
-        .details {
-            color: #555;
-            font-size: 17px; 
-            display: block; 
-            margin-top: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/gkx8zdh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kha5kwj.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mhl8zjo.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/static.getsnworks.com/fontawesome/5.15.2/css/all.min.css">
 </head>
 <body>
-<div class="row">
-    <div class="column" id="intro">
-        <h1>Molly Taylor</h1>
-         <p>I recently graduated from Princeton University, where I majored in computer science and minored in history.</p> 
-        <p>On campus, I led the features section of The Daily Princetonian, worked as a Writing Center Fellow, and contributed to research at the Center for Digital Humanities.</p>
-        <p>I currently work as a data visualization developer in Boston, MA. My data journalism has been published in the Financial Times and OpenSecrets. </a></p>
-    </div>
-
-    <div class="column" id="portfolio">
-        <h1>Selected Work</h1>
-
-        <h3>Data</h3>
-
-        <p>
-            <a href="https://giftarticle.ft.com/giftarticle/actions/redeem/8ff5a274-1eeb-499e-b3be-196985681291" target="_blank"> US universities face $1bn revenue hit over foreign student fears</a>
-            <span class="details">Financial Times, July 8, 2025</span>
-        </p>
-        <p>
-            <a href="https://ig.ft.com/us-deportation-flights/" target="_blank">The booming business of Trump’s deportation flights</a>
-            <span class="details">Financial Times, August 28, 2025</span>
-        </p>
-        <p>
-            <a href="https://www.ft.com/content/60c9bcfd-8336-4ca7-a310-ed70509b4588?" target="_blank">How we made it: the costly solution to water shortages</a>
-            <span class="details">Financial Times, August 5, 2025</span>
-        </p>
-        <p>
-            <a href="https://www.ft.com/content/bba4bc2f-2619-49a1-b81b-36e82bef768a?syn-25a6b1a6=1" target="_blank">Donald Trump: Six months in charts</a>
-            <span class="details">Financial Times, July 20, 2025</span>
-        </p>
-        <p>
-            <a href="https://www.opensecrets.org/news/2024/08/oil-and-gas-lobbying-reaches-72-million-in-first-half-of-2024/" target="_blank">Oil and gas lobbying reaches $72 million in first half of 2024</a>
-            <span class="details">OpenSecrets, August 15, 2024</span>
-        </p> 
-        <p>
-            <a href="https://www.midstory.org/what-can-we-learn-from-200000-u-s-historical-markers/" target="_blank">What can we learn from 200,000 historical markers?</a>
-            <span class="details">Midstory, March 28, 2025</span>
-        </p>
-        <p>
-            <a href="https://www.dailyprincetonian.com/article/2022/04/princeton-student-athletes-stem-majors-social-sciences" target="_blank">Why do athletes choose social sciences over STEM?</a>
-            <span class="details">The Daily Princetonian, April 11, 2022</span>
-        </p>
-
-        <h3>Writing</h3>
-        <p>
-            <a href="https://drive.google.com/file/d/1AhyTfsEEwpfh9g0xVTSAfwtO9z_X1Efu/view?usp=sharing" target="_blank"> A cartoonist investigates what AI means for his craft</a>
-            <span class="details">Financial Times Weekend Magazine, October 6, 2025</span>
-        </p>
-        <p>
-            <a href="https://www.google.com/url?q=https://www.midstory.org/signs-of-the-past-in-a-forward-looking-chicago-neighborhood/&sa=D&source=docs&ust=1778405123739708&usg=AOvVaw2jIwl2YNOFqubP777qPqIG" target="_blank"> Signs of the past in a forward-looking Chicago neighborhood</a>
-            <span class="details">Midstory, February 24, 2022</span> 
-        </p>
-
-        <p>
-            <a href="https://www.midstory.org/remembering-elektro-mansfield-and-the-world-of-tomorrow/" target="_blank">The long journey of a robot from Mansfield, Ohio</a>
-            <span class="details">Midstory, February 8, 2022</span>
-        </p>
-
-        <p>
-            <a href="https://docs.google.com/document/d/1IWEbHDQyOZ8VzPuNMi9_lXUDFDaaGiYL9OZ4XbRybks/edit?usp=sharing" target="_blank">Photography exhibit reflects on racial integration, inclusion at Princeton</a>
-            <span class="details">The Daily Princetonian, March 22, 2022</span>
-        </p>
-
-        <h3>Web Development</h3>
-        <p>
-            <a href="https://projects.dailyprincetonian.com/going-back-to-nassau-ball/" target="_blank">Going Back to Nassau Ball</a>
-            <span class="details">The Daily Princetonian, March 8, 2024</span>
-        </p>
-        <p>
-            <a href="https://projects.dailyprincetonian.com/big-block-of-cheese-day/" target="_blank">Big Block of Cheese Day</a>
-            <span class="details">The Daily Princetonian, December 8, 2023</span>
-        </p>
-        <p>
-            <a href="https://projects.dailyprincetonian.com/who-runs-princeton/" target="_blank">Who Runs Princeton?</a>
-            <span class="details">The Daily Princetonian, September 30, 2023</span>
-        </p>
-
-        <h3>Projects</h3>
-        <p>
-            <a href="https://docs.google.com/presentation/d/1-xZFtUMHu066XAskAJsPZ3yRWkb9viLvaIVtDS2d_jI/edit?usp=sharing" target="_blank">Exploring computational approaches to oral history</a>
-            <span class="details">Senior thesis completed April 2025</span>
-
-        </p>
-        <p>
-            <a href="https://slavery.princeton.edu/stories/princeton-and-lincoln-university" target="_blank">Examining Princeton's ties to the nation's first degree-granting HBCU</a>
-            <span class="details">Princeton & Slavery Project, May 2024</span>
-        </p>
-        <p>
-            <a href="https://prosody.princeton.edu/editorial/2025/05/looking-for-poetry-using-rule-based-methods/" target="_blank">Looking for poetry using rule-based methods</a>
-            <span class="details">The Princeton Prosody Archive, May 14, 2025</span>
-        </p>
-        <p>
-            Analyzing Contextual Bias in YOLOv5 Object Detection 
-            <span class="details"> Final research project for COS429: Computer Vision</span>
-        </p>
-    </div>
+<div class="name">Molly Taylor</div>
+<div class="bio">
 </div>
+<div class="projects-container">
+    <div class="project" id="FT">
+        <div class="img">
+            <img src="thumbnails/desal.png" alt="cartoon magazine story proof">
+        </div>
+        <div class="desc">
+            <div class="project-name">Data journalism and graphics at the Financial Times</div>
+            <div class ="project-sub">Summer 2025</div>
+        </div>
+    </div>
+    <div class="project" id="Pudding">
+        <div class="img"></div>
+        <div class="project-name">Data-driven story for The Pudding</div>
+        <div class ="project-sub">Leading analysis, writing, and dev | In progress</div>
+    </div>
+    <div class="project" id="Cartoons">
+        <div class="img">
+            <img src="thumbnails/cartoons.png" alt="cartoon magazine story proof">
+        </div>
+        <div class="project-name">A New Yorker cartoonist investigates what AI means for his craft</div>
+        <div class ="project-sub">Financial Times Weekend Magazine | 2025</div>
+    </div>
+    <div class="project" id="OralHistories">
+        <div class="img"></div>
+        <div class="project-name">Visualizing 1,000 interviews about Japanese incarceration during WWII</div>
+        <div class ="project-sub">2026</div>
+    </div>
+    <div class="project" id="HistoricalMarkers">
+        <div class="img"></div>
+        <div class="project-name">What can we learn from 200,000 historical markers?</div>
+        <div class ="project-sub">Midstory | 2025</div>
+    </div>
+    <div class="project" id="Money">
+        <div class="img">
+            <img src="thumbnails/oilgas.png" alt="chart on oil & gas lobbying">
+        </div>
+        <div class="project-name">Auto industry spends record sums on lobbying</div>
+        <div class ="project-sub">OpenSecrets | 2024</div>
+    </div>
+    <div class="project" id="WhoRunsPrinceton">
+        <div class="img">
+            <img id="whorunsprinceton" src="thumbnails/whorunsprinceton3.gif" alt="preview of who runs princeton interactive">
+        </div>
+        <div class="project-name">Who Runs Princeton?</div>
+        <div class ="project-sub">Interactive for The Daily Princetonian | 2023</div>
+    </div>
+    <div class="project" id="nassau-ball">
+        <div class="img">
+            <img id="nassau-ball" src="thumbnails/nassauball.gif" alt="preview of who runs princeton interactive">
+        </div>
+        <div class="project-name">Going Back to Nassau Ball</div>
+        <div class ="project-sub">Interactive for The Daily Princetonian | 2023</div>
+    </div>
+    <div class="project" id="Lincoln">
+        <div class="img">
+            <img id="lincoln" src="thumbnails/lincoln.jpeg" alt="lincoln university sketch">
+        </div>
+        <div class="project-name">Revisiting Princeton's ties to Lincoln University, the first degree-granting HBCU</div>
+        <div class ="project-sub">The Princeton & Slavery Project | 2024</div>
+    </div>
+    <div class="project">
+        <div class="img">
+            <img id="photoexhibit" src="thumbnails/cheese.png" alt="preview of who runs princeton interactive">
+        </div>
+        <div class="project-name">It's big block of cheese day</div>
+        <div class ="project-sub">Interactive for The Daily Princetonian | 2022</div>
+    </div>
+    <div class="project">
+        <div class="img">
+            <img id="photoexhibit" src="thumbnails/photoexhibit.jpeg" alt="preview of who runs princeton interactive">
+        </div>
+        <div class="project-name">Photo exhibit reflects on "the long journey" of racial integration, inclusion at Princeton </div>
+        <div class ="project-sub">The Daily Princetonian | 2022</div>
+    </div>
+    <div class="project">
+        <div class="img">
+            <img id="athletemajors" src="thumbnails/athletemajors.png" alt="preview of who runs princeton interactive">
+        </div>
+        <div class="project-name">Why are student athletes more likely to major in politics?</div>
+        <div class ="project-sub">The Daily Princetonian | 2023</div>
+    </div>
+    <div class="project">
+        <div class="img">
+            <img id="ghost-signs" src="thumbnails/chicago-ghost-signs.jpg" alt="preview of who runs princeton interactive">
+        </div>
+        <div class="project-name">Ghost signs a forward-looking Chicago neighborhood</div>
+        <div class ="project-sub">Midstory | 2022</div>
+    </div>
+    <div class="project">
+        <div class="img">
+            <img id="shipwrecks" src="thumbnails/shipwrecks.jpg" alt="preview of who runs princeton interactive">
+            </div>
+            <div class="project-name">Searching for shipwrecks on the Great Lakes</div>
+            <div class ="project-sub">Midstory | 2024</div>
+        </div>
+        <div class="project" id="elektro">
+            <div class="img">
+                <img src="thumbnails/elektro.png" alt="preview of who runs princeton interactive">
+            </div>
+            <div class="project-name">Rediscovering Elektro the Moto-Man</div>
+            <div class ="project-sub">Midstory | 2022</div>
+        </div>
+    <div class="project">
+    <div class="img">
+        <img id="color" src="thumbnails/color.png" alt="preview of who runs princeton interactive">
+        </div>
+        <div class="project-name">Somerville in Color</div>
+        <div class ="project-sub">A work in progress!</div>
+    </div>
 </body>
 </html>

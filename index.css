@@ -1,0 +1,103 @@
+body {
+    background-color: #ffffff;
+    margin: 2.3%;
+    font-family: sofia-pro, sans-serif;
+    /* font-family: "itc-avant-garde-gothic-pro"; */
+
+}
+
+.name {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 600;
+    /* font-family: "itc-avant-garde-gothic-pro"; */
+    font-family: sofia-pro, sans-serif;
+    margin-bottom: 1%;
+    margin-left: 7.5%;
+}
+
+.bio {
+    margin-left: 7.5%;
+    margin-bottom: 4%;
+
+}
+.project-name {
+    color: black;
+    line-height: 1.2;
+}
+
+.project-sub {
+    color: rgb(95, 95, 95);
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    font-weight: 500;
+    font-size: .95rem;
+    aspect-ratio: 4 / 3;
+
+
+}
+
+.img {
+    background-color: slategray;
+    min-height: 80%;
+    max-height: 80%;
+    overflow: hidden;
+    /* outline: 2px solid rgba(231, 231, 231, 0.603); */
+}
+
+img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* Prevents image distortion */
+    /* object-position: left center; */
+    display: block;
+}
+
+#lincoln {
+    height: 100% !important;
+    object-position: 10% 60% !important;
+    margin: auto;
+}
+
+#photoexhibit {
+    max-height: 105%;
+    object-position: 55% 100% !important;
+
+}
+
+#whorunsprinceton {
+    height: 105% !important;
+    /* width: 90% !important; */
+    object-position: 10% 100% !important;
+    margin: auto;
+    /* max-width: 105% !important; */
+}
+
+#athletemajors {
+    object-position: 50% 100% !important;
+    max-height: 100%;
+}
+
+#color {
+    width: 130%;
+    max-height: 100%;
+    object-position: left 100% !important;
+}
+
+#ghost-signs {
+    object-position: right 100% !important;
+}
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    /* grid-template-columns: repeat(3, minmax(250px, 1fr)); */
+    column-gap: 6vw;
+    row-gap: 7vh;
+    max-width: 85%;
+    margin: auto;
+}
+
+
