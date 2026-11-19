@@ -1,13 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="ft.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/gkx8zdh.css">
     <link rel="stylesheet" href="https://use.typekit.net/kha5kwj.css">
     <link rel="stylesheet" href="https://use.typekit.net/mhl8zjo.css">
     <link rel="stylesheet" href="https://s3.amazonaws.com/static.getsnworks.com/fontawesome/5.15.2/css/all.min.css">
 </head>
+<style>
+    body {
+    font-family: sofia-pro;
+    }
+    .description {
+        font-size: .9rem;
+    }
+
+    .page-title {
+        width: 100%;
+    }
+    .project-list {
+        display: flex;
+        flex-direction: column;
+        width: 60svw;
+        height: fit-content;
+        margin: auto;
+        gap: 3svh;
+
+    }
+
+    .project {
+        padding: 3svh;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 5%;
+        height: fit-content;
+        border-top: 1.5px solid rgba(128, 128, 128, 0.099);
+        align-items: stretch;
+        /* max-height: 5svh; */
+
+    }
+
+    .img {
+        width: 46%;
+        flex: 0 0 46%;
+        overflow: hidden;
+    }
+
+    .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        flex: 1;
+        min-width: 0;
+    }
+
+    .title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 3%;
+    }
+
+    .additional-imgs {
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        max-width: 100%;
+        flex: 1;
+        align-items: flex-end;
+        justify-content: flex-start;
+        /* border: 1px solid pink; */
+        max-height: 100%;
+    }
+
+    .additional-imgs .img {
+        height: 140px;
+        width: auto;
+        flex: 0 0 auto;
+        overflow: hidden;
+    }
+
+    .additional-imgs img {
+        display: block;
+        width: auto;
+        object-fit: contain;
+    }
+    .additional-imgs:hover {
+        cursor: pointer;        
+    }
+</style>
 <body>
     <a href="index.html">Back</a>
     <div class="project-list">
@@ -20,17 +110,26 @@
                 <img src="thumbnails/desal.png">
             </div>
             <div class="info">
-                <div class="title">The costy solution to water shortages</div>
-                <div class="description">I used QGIS and Adobe Illustrator to map water treatment facilities across the Mediterranean. </div>
+                <div class="title">The costy solution to water shortages <a href="https://drive.google.com/file/d/1GOFSZqDe5lslpsNFRSz84SALV-KQF0AR/view?usp=drive_link" target="_blank" >story</a></div>
+                <div class="description">
+                        Used QGIS and Adobe Illustrator to map water treatment facilities across the Mediterranean.<br><br>
+                        Wrote about process and design choices in Climate Graphic of the Week <a href="https://drive.google.com/file/d/1cnr7xvLF6IByBCrVsfplButuOANC3iEK/view?usp=sharing" target="_blank">newsletter.</a>
+                </div>
             </div>
         </div>
         <div class="project">
             <div class="img">
-                <img src="thumbnails/intlscatter.png">
+                <img id="intl-students" src="thumbnails/intlscatter.png">
             </div>
             <div class="info">
-                <div class="title">Tuition at stake</div>
-                <div class="description">I used QGIS and Adobe Illustrator to map water treatment facilities across the Mediterranean. </div>
+                <div class="title">US universities face $1bn revenue hit over foreign student fears <a href="https://drive.google.com/file/d/1fm3F0HeEb2ElCsy0lQO1msaNAebhAqGW/view?usp=drive_link" target="_blank">story</a></div>
+                <div class="description">
+                        <p>Analyzed university enrollment and revenue data, interviewed administrators, contributed graphics and writing.</p>
+                </div>
+                <div class="additional-imgs intl-students">
+                    <div class="img"><img src="thumbnails/bars.png"></div>
+                    <div class="img"><img src="thumbnails/pct-change.png"></div>
+                </div>
             </div>
         </div>
         <div class="project">
@@ -38,8 +137,12 @@
                 <img src="thumbnails/ice.png">
             </div>
             <div class="info">
-                <div class="title">The booming business of deportation flights</div>
-                <div class="description">I used QGIS and Adobe Illustrator to map water treatment facilities across the Mediterranean. </div>
+                <div class="title">The booming business of deportation flights <a href="https://ig.ft.com/us-deportation-flights/">story</a></div>
+                <div class="description">
+                        <p>Analyzed data on deportation flights to identify trends by airline and destination.</p>
+                        <p>Researched Avelo, the only passenger airline with an ICE contract, reported on protests and sourced former airline employee who left amidst deportation flights.</p>
+                        <p>Contributed graphic showing increase in deportation flights during Trump's second term.</p>
+                    </div>
             </div>
         </div>
         <div class="project">
@@ -47,8 +150,10 @@
                 <img src="thumbnails/doge.png">
             </div>
             <div class="info">
-                <div class="title">Doge cuts</div>
-                <div class="description">Analyzed CBO spending data for quick-turn graphic </div>
+                <div class="title">Doge cuts <a href="https://drive.google.com/file/d/14KL6xcfI1f_8nQm6VmCmgomiOQyJKsws/view?usp=sharing" target="_blank">story</a></div>
+                <div class="description">
+                    Proposed section on DOGE layoffs for "charticle" about impact of Trump's second term, found and visualized data, wrote analysis. 
+                </div>
             </div>
         </div>
         <div class="project">
@@ -56,18 +161,26 @@
                 <img src="thumbnails/tree.png">
             </div>
             <div class="info">
-                <div class="title">What's in the big beautful bill?</div>
-                <div class="description">Analyzed CBO spending data for quick-turn graphic </div>
-            </div>
+                <div class="title">What is in Donald Trump's giant tax-cutting bill? <a href="https://drive.google.com/file/d/1wjdqRBNw17RRbslyelBIATDiYPStrAS7/view?usp=drive_link" target="_blank">story</a></div>
+                <div class="description">
+                        Analyzed Congressional Budget Office data for graphic on Big Beautiful Bill defense budget.</div>
+                </div>
         </div>
         <div class="project">
             <div class="img">
-                <img src="thumbnails/temps.png">
+                <img id="heat" src="thumbnails/heatwave.png">
+
             </div>
             <div class="info">
-                <div class="title">Sea temps break records</div>
-                <div class="description">Analyzed CBO spending data for quick-turn graphic </div>
-            </div>
+                <div class="title">Western Europe keeps setting new heat records as fastest-warming continent <a href="https://drive.google.com/file/d/10BwMntwAIkPnlnM8vLekaf8pJaYy6njr/view?usp=drive_link" target="_blank">story</a></div>
+                <div class="description">Produced quick-turn graphics for story on record-setting heat, based on Copernicus data.</div>
+                <div class="additional-imgs heat">
+                    <div class="img">
+                    <img src="thumbnails/temps.png">
+                    </div>
+                </div>
+                </div>
+
         </div>
         <div class="project">
             <div class="img">
@@ -75,9 +188,29 @@
             </div>
             <div class="info">
                 <div class="title">Competitiveness of house elections</div>
-                <div class="description">Analyzed CBO spending data for quick-turn graphic </div>
+                <div class="description">Found data and produced quick-turn graphic for explainer on declining competitiveness in U.S. elections.</div>
             </div>
         </div>
     </div>
 </body>
+<script>
+    const mainIntlStudentsImg = document.querySelector("#intl-students");
+    const mainHeatImg = document.querySelector("#heat");
+
+    document.querySelectorAll(".additional-imgs.intl-students img").forEach(img => {
+        img.addEventListener("click", () => {
+            const temp = mainIntlStudentsImg.src;
+            mainIntlStudentsImg.src = img.src;
+            img.src = temp;
+        });
+    });
+
+    document.querySelectorAll(".additional-imgs.heat img").forEach(img => {
+        img.addEventListener("click", () => {
+            const temp = mainHeatImg.src;
+            mainHeatImg.src = img.src;
+            img.src = temp;
+        });
+    });
+</script>
 </html>

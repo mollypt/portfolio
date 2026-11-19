@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="ft.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/gkx8zdh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kha5kwj.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mhl8zjo.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/static.getsnworks.com/fontawesome/5.15.2/css/all.min.css">
+</head>
+<style>
+    .text {
+        width: 42%;
+        margin: auto;
+        font-size: 1.05rem;
+        /* font-family: 'franklin-gothic-urw', sans-serif;; */
+        font-weight: 400;
+
+    }
+
+    .question-list {
+        /* font-weight: 600; */
+        padding-left: 5%;
+        padding-right: 5%;
+        font-style: italic;
+    }
+    img {
+        max-width: 80%;
+        margin: auto;
+        margin-top: 1.1%;
+        margin-bottom: 1.1%;
+    }
+    .img-container {
+        max-width: 32%;
+        object-fit: contain;
+    }
+    .dot-container {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+    .side-by-side {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 0px;
+        gap: 5%;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+    .side {
+        width: 50%;
+        font-size: .85rem;
+    }
+    .side .title {
+        margin: auto;
+        padding: 1.5%;
+        padding-left: 2.5%;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        background-color: rgb(35, 29, 26);
+        color: white;
+        /* font-family: "itc-avant-garde-gothic-pro"; */
+        font-size: .8rem;
+    }
+
+    .side .content {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;        
+        border: 1px solid black;
+        padding: 2.5%;
+    }
+
+    a {
+        margin-left: 2%;
+        font-weight: 400;
+        color: rgba(251, 246, 239, 0.858);          
+        text-decoration: none;   
+    }
+
+    a.methods {
+        color: black;
+        text-decoration: underline;
+        margin-left: 0%;
+    }
+
+    a.project {
+        display: inline;
+        color: gray;
+        font-weight: 400;
+
+        /* margin-left: 1%; */
+        font-size: large;
+        padding-left: 0%;
+        margin-left: 0%;
+    }
+
+    h3 {
+        margin-right: 0%;
+    }
+
+    .notes {
+        font-size: smaller;
+        border-top: 1px solid gray;
+    }
+    .title h2, .title h3{
+        text-align: center;
+    }
+</style>
+<body>
+    <a href="index.html">Back</a>
+    <div class="title">
+        <h3>An experiment in natural language processing and data vis</h3>
+    </div>
+    <div class="text">
+    For my senior thesis, I researched how natural language processing can help historians and archivists work with oral history collections, motivated by the challenge of drawing connections across across hundreds of documents. Specifically, I worked with Densho’s collection on Japanese incarceration during World War II.<br><br>
+
+    I routinely found myself running a topic modeling algorithm,* recording the output in a text file, and then reading the corresponding interviews to interpret the results. This process made me wonder: what would an interface for exploring relationships across an archive look like? <br><br> As an experiment, I built interactive visualizations based on two analyses from my thesis. The goal for each is to 1.) teach the reader something about the collection at large, and then 2.) lead the reader to engage with individual documents. 
+    
+    <br>
+    <br>
+    <h3>Asking about questions <a class = "project" href="https://mollypt.github.io/oral-histories-questions/" target="_blank">| See project</a></h3>
+    I grouped similar questions into "topics" using a sentence-embedding tool called <a class="methods" href="https://maartengr.github.io/BERTopic/index.html" target="_blank">BERTopic</a>. For example, many questions about packing during the forced evacuation are grouped in a topic about belongings: <br><br>
+
+    <div class="question-list">
+        What did you pack?<br>
+        How about personal things, like photos and photo albums?<br>
+        And then what happened to things that you did not pack? Do you remember the things that you had to leave behind?<br>
+        And each person, how many suitcases were they allowed to have?<br>
+        <br> 
+    </div>
+    Then, for a bird's eye perspective on interview progression, I plotted topic questions by their timing.
+    <br>
+    <img src="thesis/dispersion.png"></imr>
+    <br>
+    Upon seeing this chart, I was immediately curious about individual data points: why do a few interviews begin with questions about Hiroshima and Nagasaki? What are the various contexts in which thematic topics like church and race arise?<br><br>
+    
+    To help answer these questions, I built an interactive visualization of interview questions and their timing by topic. I was particularly interested in presenting the relationship between individual interviews and the collection as a whole, so if you select a question, the display drills down to only questions from that interview.  
+    
+    <br>
+    <br>
+    <h3>Keywords <a class = "project" href="https://mollypt.github.io/oral-history-keywords/" target="_blank">| See project</a></h3>
+    I also performed topic modeling on the entire collection using <a class="methods" href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation" target="_blank">LDA</a>, which identifies words that frequently appear together. 
+    
+    <br><br>I was interested in understanding the associations between topics; for example, when narrators discusses money, what else are they talking about? In my analysis, I could see that money arose in discussion of Japantown businesses, pre-war work in farming and fishing, selling items and land during the forced evacuation, and reparations. <br><br>
+    <br>
+</div>
+
+    <div class= "side-by-side">
+        <div class="side">
+            <div class="title">Money & pre-war farmwork <a href="https://ddr.densho.org/interviews/ddr-densho-1000-101-1/" target="_blank">See interview</a></div>
+            <div class="content">
+                Q: Did you have any other jobs, aside from cleaning your piano teacher's house? Tell me a little about that.
+                <br><br>
+                A: After school, every summer, we would go out to the berry fields and pick strawberries and raspberries, and whatever. But we earned money then for our school clothes.
+                <br><br>
+                Q: Do you think kids these days work that hard?
+                <br><br>
+                A: Well, berry picking is hard. You don't find many kids out in the berry fields now. But, and that's too bad, because we had a lot of fun doing it, too.
+                </div>
+            </div>
+            <div class="side">
+                <div class="title">Money & forced evacuation <a href="https://ddr.densho.org/interviews/ddr-densho-1000-281-1/" target="_blank">See interview</a> </div>
+                <div class="content">
+                Q: So talk about, so the weeks leading up to when you have to leave, what kind of arrangements did you make in terms of who would harvest the peaches when you were gone, who would take care of the land, the farm?
+                <br><br>
+                A: Well, at that time, we had no arrangement. This was all done on a handshake. And actually, we were on the side that, "Would you take care of my property while I'm gone?" And my neighbor, he's a German, and he says, "Don't worry, I'll harvest your crop." Well, I don't remember if we got anything out of the crop as far as money goes. I don't know if he made any money or not. So financially, yeah, it was really a big financial loss for us. 'Cause we raised the crop, and we had put all the labor and all the expense in, and then we left. When the government says, "Get out," well, you got out.
+            </div>
+            </div>
+            <div class="side">
+                <div class="title">Money & redress <a href="https://ddr.densho.org/interviews/ddr-manz-1-50-1/" target="_blank"> See interview</a> </div>
+                <div class="content">
+                Q: What did you think about the redress?
+                <br><br>
+                A: Well, don't forget, as far as getting it and appreciating it. But you know, like I think the twenty thousand, I don't think, it never could replace the freedom we lost. Like we said, I could tell the students that, when I go to talk to 'em, said, "You know, you lose your rights, your constitutional right, you don't realize it until you do," I said. You get stuck back there in the fence like that, losing your own constitutional right and all that. Because technically speaking, man without a country. And that apology, I think just as much about the apology as I do about the twenty thousand dollars. [Laughs]
+                <br><br>
+                Q: How did the apology make you feel?
+                <br><br>
+                A: Well, I felt a little better. But it'll never take away the years I lost in camp.
+                </div>
+            </div>
+            </div>
+<div class="text">
+
+    To visualize the relatedness between topics, I created a few static charts in which each topic is a dot, and topics that co-occur with the “central” (red) topic are highlighted. Obviously, this chart has limitations. The dot positions are based on their word embedding projections (and while these are meaningful, they are also obscure), and the dots themselves are not particularly compelling. However, I was excited by concept of one idea prompting others to light up. 
+    </div>
+    <div class="dot-container">
+        <div class="img-container">
+            <img src="thesis/dots-1.png"></img>
+        </div>
+        <div class="img-container">
+            <img src="thesis/dots-2.png"></img>
+        </div>
+        <div class="img-container">
+            <img src="thesis/dots-3.png"></img>
+        </div>
+
+    </div>
+    <div class="text">
+    Instead of dots, I decided to represent topics by their keywords, which are immediately evocative. When you select a keyword, only keywords from co-occuring topics remain. I imagine this project as a sort of “interactive index” that reveals connections between the collection’s key terms and directs readers to the source material. 
+    
+    <div class="notes">* To be clear, this project did not involve LLMs.</div>
+    </div>
+</body>
+</html>
