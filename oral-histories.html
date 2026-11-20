@@ -110,9 +110,14 @@
     .title h2, .title h3{
         text-align: center;
     }
+
+    #back {
+        color: black;
+        text-decoration: underline;
+    }
 </style>
 <body>
-    <a href="index.html">Back</a>
+    <a id="back" href="index.html">Back</a>
     <div class="title">
         <h3>An experiment in natural language processing and data vis</h3>
     </div>
@@ -139,9 +144,11 @@
     <br>
     Upon seeing this chart, I was immediately curious about individual data points: why do a few interviews begin with questions about Hiroshima and Nagasaki? What are the various contexts in which thematic topics like church and race arise?<br><br>
     
-    To help answer these questions, I built an interactive visualization of interview questions and their timing by topic. I was particularly interested in presenting the relationship between individual interviews and the collection as a whole, so if you select a question, the display drills down to only questions from that interview.  
-    
-    <br>
+    To help answer these questions, I built an interactive visualization of interview questions and their timing by topic. I wanted to present the relationship between individual interviews and the collection as a whole, so if you select a question, the display drills down to only questions from that interview.  
+    <br><br>
+
+    <img src="thumbnails/questions.png" alt="questions">
+
     <br>
     <h3>Keywords <a class = "project" href="https://mollypt.github.io/oral-history-keywords/" target="_blank">| See project</a></h3>
     I also performed topic modeling on the entire collection using <a class="methods" href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation" target="_blank">LDA</a>, which identifies words that frequently appear together. 
@@ -202,7 +209,10 @@
     </div>
     <div class="text">
     Instead of dots, I decided to represent topics by their keywords, which are immediately evocative. When you select a keyword, only keywords from co-occuring topics remain. I imagine this project as a sort of “interactive index” that reveals connections between the collection’s key terms and directs readers to the source material. 
-    
+    <br><br>
+
+    <img src="thumbnails/keywords-wide2.png" alt="keywords">
+    <br><br>
     <div class="notes">* To be clear, this project did not involve LLMs.</div>
     </div>
 </body>
