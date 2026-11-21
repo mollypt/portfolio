@@ -12,23 +12,36 @@
         font-family: 'Inter';
     }
     .text {
-        width: 42%;
+        width: 36%;
         margin: auto;
-        font-size: .95rem;
+        font-size: 1rem;
         font-weight: 400;
     }
 
+    .video-container {
+        margin: auto;
+        width: 100%;
+    }
+
+    video {
+        width: 55%;
+        margin: auto;
+        display: block;
+        clip-path: inset(0 0 1% 1%);
+    }
+
+
     .img-container {
-        max-width: 32%;
+        width: 100%;
+        margin: auto;
         overflow: hidden;
+
     }
 
     img {
-        width: 55%;
-        object-fit: cover;
-        object-position: top;
-        margin: 1.1% auto;
-        clip-path: inset(0 0 1% 1%);
+        width: 12.5%;
+        margin: auto;
+        display: block;
     }
     
     h3 {
@@ -37,11 +50,20 @@
 
 
 
+    a:visited,
+    a:hover,
+    a:active,
     a {
-        margin-left: 2%;
+        color: gray;
+        text-decoration: none;
         font-weight: 400;
-        color: rgba(251, 246, 239, 0.858);          
-        text-decoration: none;   
+    }
+
+    .heading {
+        width: 36%;
+        margin: auto;
+        margin-bottom: 1%;
+        margin-top: 2%;
     }
 
 
@@ -66,9 +88,15 @@
     }
 </style>
 <body>
-    <a id="back" href="index.html">Back</a>
+    <div class="heading">
+        <a href="index.html">Back to projects</a>
+    </div>
+
+    <div class="img-container">
+        <img src="thumbnails/bakery.png">
+        </div>
     <div class="title">
-        <h2>Who's in a name?</h2>
+        <h1>Who's in a name?</h1>
     </div>
     <div class="text">
         <p>
@@ -90,29 +118,70 @@
             The result underlines the specificity of our perceptions about who sells what.
         </p>
         <p>
-            The draft is in progress and requires plently of polishing and revision, but here's a sketch of where things stand. I'm working with Jan Diehm with illustrations by Joel Holland.
+            <b>The draft is in progress and requires plently of polishing and revision, but this page gives an idea of where things stand.</b> I'm working with Jan Diehm with illustrations by Joel Holland.
         </p>
+        <br>
     <br>
     <br>
 
         </div>
         
-    <img src="thumbnails/quiz-trimmed.gif">
+     <div class="video-container">
+    <video autoplay muted loop playsinline width="600">
+        <source src="thumbnails/quiz-trimmed-mp4.mov" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>   
     <h3>Topper: Testing your intuitions</h3>
+        <div class="text">The story begins with a quiz asking which of three names is most likely to appear on a given business category. The idea is to prompt readers to reflect on their implicit associations about names before introducing any methodology or analysis.</div>
 
+    <br><br><br><br><br>
 
-    <br><br>
-    <img src="thumbnails/gender-trim.gif">
+    <div class="video-container">
+        <video autoplay muted loop playsinline width="600" id="gender">
+            <source src="thumbnails/gender-really-fixed-mp4.mov" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>   
     <p class="caption">Narration hidden.</p>
 
     <h3>Analyzing categories by gender</h3>
+    <div class="text">
+        <p>For one, we have granular expectations when it comes to gender.</p>
+        <p>I used the Gender Guesser Python library to classify names by gender (or as androgenous). In turn, we can see the gender breakdown of different categories.<p>
+
+        <p>In some cases, the gender breakdown exaggerates existing stereotypes. 
+            Daycares and pet shops overwhelmingly use female names, while
+            mechanics, plumbers, and garden centers are almost entirely male.</p>
+        <p>However, the relationships between other categories are more subtle.</p>
+        <p>Restaurants use male eponyms 70 percent of the time, but about 80 percent of the eponyms on pizzerias and bars are male. 
+            Meanwhile, diners, cafes, and bakeries are relatively more female than the average restaurant. </p>
+        <p> The majority of clothing store eponyms are female while jewelry stores are roughly even.</p>
+        <p> In the story, this section parses the particularity of our associations between gender and commerical roles.  </p>
+
+        </div>
+    <br><br>
     <br><br>
 
-    <img src="thumbnails/street-trim.gif">
+    <div class="video-container">
+        <video autoplay muted loop playsinline width="600">
+            <source src="thumbnails/street-trimmed-mp4.mov" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>   
     <h3>Names by category</h3>
-
     <div class="text">
-
+        <p>Each name gravitates toward certain categories and away from others, based on a variety of characteristics—gender only scratches the surface.</p>
+        <p>This section explores the top names by category and the most overrepresented names by category.</p>
+        <p>We can see plenty of thematic connections. Noah leads daycares, commonly referencing Noah's Ark, while Faye, Lily, and April are among the most overrepresented florist names. Cultural backgrounds, of course, also define patterns.</p>
+        <p>However, many associations are less explicit. For example, Amber, Debbie, and Dawn are all more strongly overrepresented on pet shops than the on-the-nose <i>Kitty</i>. This section calls attention to the implicit connotations of names.</p>
+    <br><br>
+   
+    <p>TK: a final section allowing readers to search for specific names and explore their category profiles, geography, and similar names.</p>
+        <br>
+        <br>
+</div>
+    <div class="text">
 
 </div>
 
