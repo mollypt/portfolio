@@ -34,6 +34,11 @@
         max-width: 32%;
         object-fit: contain;
     }
+
+    .img-container.head {
+       max-width: 70%;
+       margin: auto;
+    }
     .dot-container {
         display: flex;
         flex-direction: row;
@@ -78,7 +83,7 @@
     a {
         margin-left: 2%;
         font-weight: 400;
-        color: rgba(251, 246, 239, 0.858);          
+        color: gray;          
         text-decoration: none;   
     }
 
@@ -115,16 +120,77 @@
         color: black;
         text-decoration: underline;
     }
+
+    .caption {
+        color: gray;
+        text-align: center;
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+
+    .video-container {
+        margin: auto;
+        width: 100%;
+    }
+
+    .video-container img {
+        width: 42%;
+        margin: auto;
+        display: block;
+    }
+
+    video {
+        width: 52%;
+        margin: auto;
+        display: block;
+        clip-path: inset(0 0 1% 1%);
+    }
+
+    #questions {
+        width: 100%;
+    }
+
+    /* a:visited,
+    a:hover,
+    a:active,
+    a {
+        color: gray;
+        text-decoration: none;
+        font-weight: 400;
+    } */
+
+    .heading {
+        width: 42%;
+        margin: auto;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    .heading a {
+        margin: 0;
+        padding: 0px;
+        font-weight: 500;
+    }
+
 </style>
 <body>
-    <a id="back" href="index.html">Back</a>
+    <div class="heading">
+        <a href="index.html">Back to projects</a>
+    </div>
+    <div class="text">
+    <div class="img-container head">
+            <img src="thumbnails/keywordstrimmed.gif">
+        </div>
+    </div>
+    <br>
     <div class="title">
+        <h2>Visualizing oral histories</h2>
+
         <h3>An experiment in natural language processing and data vis</h3>
     </div>
     <div class="text">
     For my senior thesis, I researched how natural language processing can help historians and archivists work with oral history collections, motivated by the challenge of drawing connections across across hundreds of documents. Specifically, I worked with Densho’s collection on Japanese incarceration during World War II.<br><br>
 
-    I routinely found myself running a topic modeling algorithm,* recording the output in a text file, and then reading the corresponding interviews to interpret the results. This process made me wonder: what would an interface for exploring relationships across an archive look like? <br><br> As an experiment, I built interactive visualizations based on two analyses from my thesis. The goal for each is to 1.) teach the reader something about the collection at large, and then 2.) lead the reader to engage with individual documents. 
+    I routinely found myself running a topic modeling algorithm,* recording the output in a text file, and then reading the corresponding interviews to interpret the results. This process made me wonder: what would an interface for exploring relationships across an archive look like? <br><br> As an experiment, I built interactive visualizations based on two analyses from my thesis. The goal for each is to 1.) teach the reader something about the collection at large, and then 2.) lead the reader to engage with individual testimony. 
     
     <br>
     <br>
@@ -147,8 +213,15 @@
     To help answer these questions, I built an interactive visualization of interview questions and their timing by topic. I wanted to present the relationship between individual interviews and the collection as a whole, so if you select a question, the display drills down to only questions from that interview.  
     <br><br>
 
-    <img src="thumbnails/questions.png" alt="questions">
-
+    <!-- <div class="video-container"> -->
+    <video autoplay muted loop playsinline width="600" id="questions">
+        <source src="thesis/pearl-harbor-qs-mp4.mov" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    <!-- <img src="thumbnails/questions.png" alt="questions"> -->
+        <br>
+    Interestingly, interviews rarely follow the "median" progression suggested by the collection-level view. 
+    <br>
     <br>
     <h3>Keywords <a class = "project" href="https://mollypt.github.io/oral-history-keywords/" target="_blank">| See project</a></h3>
     I also performed topic modeling on the entire collection using <a class="methods" href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation" target="_blank">LDA</a>, which identifies words that frequently appear together. 
@@ -208,11 +281,37 @@
 
     </div>
     <div class="text">
-    Instead of dots, I decided to represent topics by their keywords, which are immediately evocative. When you select a keyword, only keywords from co-occuring topics remain. I imagine this project as a sort of “interactive index” that reveals connections between the collection’s key terms and directs readers to the source material. 
-    <br><br>
-
-    <img src="thumbnails/keywords-wide2.png" alt="keywords">
-    <br><br>
+    Instead of dots, I decided to represent topics by their keywords, which are immediately evocative. When you select a keyword, only keywords from co-occuring topics remain.
+        <br><br>
+    Each pair of topics tells a story. 
+    <br>
+    <br>
+        </div>
+    <div class="caption">Fishing & livelihood</div>
+    <video autoplay muted loop playsinline width="600">
+        <source src="thesis/fishing-mp4.mov" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <br>
+    <div class="caption">Pearl Harbor & reflection</div>
+    <video autoplay muted loop playsinline width="600">
+        <source src="thesis/pearl-harbor-mp4.mov" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+   <div class="text">
+    <br>
+    <br>
+    After selecting two topics, you can read interview segments that include them. This aspect is important because I believe visualizations of archival collections should bring readers in and offer new ways of thinking with the material, rather than simply abstracting it. 
+   <br>
+   <br>
+    </div>
+        <br>
+        <div class="video-container">
+            <img src="thesis/panel.png"></img>
+        </div>
+        <br><br>
+    <div class="text">
+     <br>
     <div class="notes">* To be clear, this project did not involve LLMs.</div>
     </div>
 </body>
