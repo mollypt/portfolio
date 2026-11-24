@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="ft.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/gkx8zdh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kha5kwj.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mhl8zjo.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/static.getsnworks.com/fontawesome/5.15.2/css/all.min.css">
+</head>
+<style>
+    .text {
+        width: 42%;
+        margin: auto;
+        font-size: 1.05rem;
+        /* font-family: 'franklin-gothic-urw', sans-serif;; */
+        font-weight: 400;
+
+    }
+
+    .question-list {
+        /* font-weight: 600; */
+        padding-left: 5%;
+        padding-right: 5%;
+        font-style: italic;
+    }
+    img {
+        max-width: 100%;
+        margin: auto;
+        margin-top: 1.1%;
+        margin-bottom: 1.1%;
+        height: auto;
+    }
+
+    img#all{
+        width: 80%;
+    }
+    .img-container {
+        max-width: 100%;
+        object-fit: contain;
+        margin: auto;
+    }
+
+    .img-container .urr {
+        width: 42% !important;
+        object-fit: contain;
+    
+    }
+    .img-container.head {
+       max-width: 70%;
+       margin: auto;
+    }
+    .dot-container {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+
+    a {
+        margin-left: 2%;
+        font-weight: 400;
+        color: gray;          
+        text-decoration: none;   
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    a.inline {
+        margin: 0 !important;
+        color: rgb(15, 77, 159);
+        text-align: start;
+    }
+
+    a#story {
+        color: rgb(15, 77, 159);
+        font-weight: 600;
+        text-align: right;
+        text-decoration: underline;
+    }
+    a.project {
+        display: inline;
+        color: gray;
+        font-weight: 400;
+
+        /* margin-left: 1%; */
+        font-size: large;
+        padding-left: 0%;
+        margin-left: 0%;
+    }
+
+    h3 {
+        margin-right: 0%;
+    }
+
+    .title h1, h2, .title h3{
+        text-align: center;
+        width: 40%;
+        margin: auto;
+    }
+
+    #back {
+        color: black;
+        text-decoration: underline;
+    }
+
+    .caption {
+        color: gray;
+        text-align: center;
+        /* margin-bottom: 1%; */
+        margin-top: 1%;
+        opacity: .8
+    }
+
+    .video-container {
+        margin: auto;
+        width: 100%;
+    }
+
+
+    video {
+        width: 60%;
+        margin: auto;
+        display: block;
+        clip-path: inset(10% 0% 2% 0%);
+        margin-top: -2%;
+    }
+
+    .heading {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 0%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .heading a {
+        margin: 0;
+        padding: 0px;
+        font-weight: 500;
+    }
+
+    .map-title {
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class="heading">
+        <a href="index.html">Back to projects</a>
+        <a href="https://www.midstory.org/what-can-we-learn-from-200000-u-s-historical-markers/" target="_blank" id="story"> See published story</a>
+
+    </div>
+    <a href="https://www.midstory.org/what-can-we-learn-from-200000-u-s-historical-markers/" target="_blank">
+        <div class="video-container head">
+                <video autoplay muted loop playsinline width="600" src="thumbnails/gettysburg-mp4.mov">
+            </div>
+        </div>
+
+    </a>
+    <br>
+
+    <div class="title">
+        <h1>What can we learn from 200,000 historical markers?</h1>
+    </div>
+    <div class="text">
+
+        <p> In the summer of 2024, I pitched and reported a data-driven <a href="https://www.midstory.org/what-can-we-learn-from-200000-u-s-historical-markers/" target="_blank" class="inline">story for Midstory</a> about how we choose to commemorate our past, based on data from the <a href="https://www.hmdb.org/" target="_blank" class="inline">Historical Marker Database.</a> </p>
+        <p>The published story uses ArcGIS and Flourish, 
+        but I've been chipping away at a custom-code/vis version because I still have lots of questions about this dataset. 
+        <br>
+        <br>
+        <div class="img-container">
+            <img id ="all" src="thumbnails/all-markers-dots-layered.png">
+        </div>
+        <div class="caption">Every marker in the contiguous U.S.</div>
+        <br>
+
+        <p>Recently, I've been exploring markers' point geography.
+            I'm curious about how historical events become 
+            part of our physical landscape, and the 
+            extent to which public history is tied to historical geography.
+            <br>
+            <p class="map-title">For example: </p>
+           
+        <p class="map-title">Historical markers trace Lewis & Clark's westward expedition...</p>
+        <div class="img-container">
+            <img src="thumbnails/lewis&clarkmultiply.png">
+        </div>
+        <p class="map-title">...and the Trail of Tears.</p>
+
+        <div class="img-container">
+            <img src="thumbnails/trail-of-tears.png">
+        </div>
+        <p class="map-title">They show that remembrance of 9/11 extends well beyond New York...</p>
+
+        <div class="img-container">
+            <img src="thumbnails/9:11.png">
+        </div>
+
+        <div class="railroad">
+            <p class="map-title">...but that the Underground Railroad is sparsely marked in the South.</p>
+
+            <div class="img-container urr">
+                <img src="thumbnails/urr.png">
+            </div>
+
+        </div>
+        <p>I hope to share more soon!</p>
+    </div>
+
+
+    
+</body>
+</html>
