@@ -95,7 +95,7 @@
 
     a.project {
         display: inline;
-        color: gray;
+        color: rgb(88, 88, 88);
         font-weight: 400;
 
         /* margin-left: 1%; */
@@ -106,6 +106,7 @@
 
     h3 {
         margin-right: 0%;
+        margin-left: 0%
     }
 
     .notes {
@@ -171,6 +172,25 @@
         margin: 0;
         padding: 0px;
         font-weight: 500;
+        
+    }
+
+    .project-links {
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        font-size: large;
+    }
+
+    .project-links a {
+        margin-left: 0%;
+        text-decoration: underline;
+        color: rgb(50, 118, 182)
     }
 
 </style>
@@ -190,6 +210,7 @@
         <h2>Visualizing oral histories</h2>
 
         <h3>An experiment in natural language processing and data vis</h3>
+        <h3 class="project-links">See live projects: <a href="https://mollypt.github.io/oral-histories-questions/" target="_blank">Questions</a><a href="https://mollypt.github.io/oral-history-keywords/" target="_blank">Keywords</a></h3>
     </div>
     <div class="text">
     For my senior thesis, I researched how natural language processing can help historians and archivists work with oral history collections, motivated by the challenge of drawing connections across across hundreds of documents. Specifically, I worked with Densho’s collection on Japanese incarceration during World War II.<br><br>
@@ -198,7 +219,7 @@
     
     <br>
     <br>
-    <h3>Asking about questions <a class = "project" href="https://mollypt.github.io/oral-histories-questions/" target="_blank">| See project</a></h3>
+    <h3>Asking about questions <a class = "project" href="https://mollypt.github.io/oral-histories-questions/" target="_blank">| See live project</a></h3>
     I grouped similar questions into roughly 80 "topics" using a sentence-embedding tool called <a class="methods" href="https://maartengr.github.io/BERTopic/index.html" target="_blank">BERTopic</a>. For example, many questions about packing during the forced evacuation appear in the same topic: <br><br>
 
     <div class="question-list">
@@ -230,7 +251,7 @@
     Interestingly, interviews rarely follow the "median" progression suggested by the collection-level view. 
     <br>
     <br>
-    <h3>Keywords <a class = "project" href="https://mollypt.github.io/oral-history-keywords/" target="_blank">| See project</a></h3>
+    <h3>Keywords <a class = "project" href="https://mollypt.github.io/oral-history-keywords/" target="_blank">| See live project</a></h3>
     I also performed topic modeling on the entire collection using <a class="methods" href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation" target="_blank">LDA</a>, which identifies words that frequently appear together. 
     
     <br><br>I was interested in understanding the associations between topics; for example, when narrators discusses money, what else are they talking about? In my analysis, I could see that money arose in discussion of Japantown businesses, pre-war work in farming and fishing, selling items and land during the forced evacuation, and reparations. <br><br>
